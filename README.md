@@ -18,7 +18,7 @@ You should be able to access the application through localhost at port 8888 as c
 
 `localhost:8888/api/item/mark-complete`
 
-**list** 
+**List** 
 
 `localhost:8888/api/items/list`
 
