@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\GoogleAuthController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,6 +20,7 @@ Route::get('/', function () {
 });
 
 Route::get('/auth/check', [GoogleAuthController::class, 'authCheck']);
+Route::get('/auth/token', [AuthController::class, 'createToken']);
 Route::get('auth/google', [GoogleAuthController::class, 'redirect'])->name(
     'google-auth'
 );
